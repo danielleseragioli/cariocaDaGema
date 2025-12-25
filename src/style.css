@@ -1,0 +1,516 @@
+/* -------------------------------- GERAL -------------------------------- */
+
+/* Fonte principal */
+body {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px; 
+}
+
+/* Menu */
+.navbar {
+    background-color: white;
+    padding: 10px;
+}
+.navbar-nav .nav-link {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    margin: 0 5px;
+}
+.navbar-nav .nav-link:hover {
+    color: #f4b400;
+}
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; 
+}
+.navbar.fixed-nav {
+    background-color: #fff;
+}
+.navbar.scrolled {
+    box-shadow: 0 4px 8px rgba(79, 79, 79, 0.2); 
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #fff;
+    padding: 50px 0;
+    border-top: 1px solid #ddd;
+}
+footer .contact-info, footer .subscribe-newsletter {
+    text-align: left;
+    padding: 10px;
+}
+footer h5 {
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+footer p {
+    font-size: 10px;
+    color: #000;
+}
+footer .subscribe-newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .subscribe-newsletter input[type="text"],
+footer .subscribe-newsletter input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 5px 0;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 10px;
+}
+footer .subscribe-newsletter input:focus {
+    outline: none;
+    border-bottom: 1px solid #f4b400;
+}
+footer .subscribe-newsletter button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+    cursor: pointer;
+}
+
+
+
+/* -------------------------------- HOME -------------------------------- */
+
+
+/* Logo e Cabeçalho */
+.logo {
+    text-align: center;
+    margin: 150px 0; 
+}
+
+.logo img {
+    width: 100%; 
+    max-width: 900px; 
+    height: auto; 
+    object-fit: contain; 
+}
+
+/* Seção "Explore o Rio de Janeiro" */
+.explore-section {
+    margin: 30px 0;
+}
+.explore-content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+.explore-images {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.explore-images .image-praia {
+    width: auto;
+    max-height: 400px;
+}
+.explore-images .image-chapeu {
+    width: auto;
+    max-height: 250px;
+}
+.explore-text {
+    flex: 1;
+    max-width: 100%; 
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-left: 0;
+}
+
+/* Ofertas Recentes */
+.offers-section {
+    text-align: center;
+    padding: 50px 0;
+}
+.section-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 0; 
+    margin-bottom: 10px; 
+    display: block;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.offers-section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.offers-section .col-md-6 {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+}
+.offer-caption {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+    margin-top: 15px;
+}
+.hotel-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.hotel-img:hover {
+    transform: scale(1.05);
+}
+.offer-button {
+    margin-top: 30px;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+.offer-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Seção "Explore o Rio" */
+.explore-rio {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    flex-wrap: wrap; 
+}
+.explore-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.explore-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    flex: 1 1 30%; 
+    max-width: 300px; 
+}
+.explore-item:hover {
+    background-color: #f0f0f0;
+}
+.explore-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.explore-item h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+.explore-item p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #555;
+    margin: 5px 0 0;
+}
+
+/* Seção de Sugestões de Hospedagem */
+.lodging-section {
+    text-align: center;
+    padding: 50px 0;
+}
+.lodging-section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.lodging-section .col-md-6 {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+}
+.hotel-img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Responsividade - MOBILE --- home */
+@media (min-width: 768px) {
+    .explore-content {
+        flex-direction: row;
+    }
+    .explore-images {
+        flex-direction: row;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+    .logo img {
+        width: 80%;
+    }
+    .explore-text {
+        font-size: 12px;
+    }
+    .explore-rio {
+        flex-direction: column; 
+    }
+    .explore-item {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+    .explore-images {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        gap: 20px; 
+        text-align: center; 
+    }
+    .explore-images img {
+        max-width: 90%; 
+        height: auto; 
+        margin: 0 auto; 
+    }
+}
+
+/* -------------------------------- RIO DE JANEIRO ———————————————— */
+
+
+.full-width-image img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+}
+
+
+
+
+/* -------------------------------- HOSPEDAGEM (modelo para outras - STANDARD) -------------------------------- */
+
+/* Estilo da logo para hospedagem.html */
+.logo-pequena {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.logo-pequena img {
+    width: 300px; 
+    height: auto;
+}
+
+/* Ajustes no menu para a página hospedagem.html */
+.menu-hospedagem {
+    margin-top: 0; 
+    padding-top: 0; 
+}
+
+
+/* Estilo do Carrossel para Hospedagem */
+#carouselStandard .carousel-inner img {
+    width: 100%;
+    height: 75vh; 
+    object-fit: cover;
+}
+
+@media (max-width: 768px) { 
+    #carouselStandard .carousel-inner img {
+        height: 60vh; /
+    }
+}
+
+.custom-caption {
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #000; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    text-align: center; 
+    display: inline-block; 
+    max-width: 90%; 
+    margin: 0 auto; 
+    font-size: 14px; 
+}
+
+@media (min-width: 768px) {
+    .custom-caption {
+        font-size: 16px; 
+    }
+}
+
+/* Seção de Hotéis */
+.standard-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+/* Contêiner do item do hotel */
+.standard-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 20px;  
+    position: relative;
+}
+
+/* Ajuste do conteúdo do hotel */
+.standard-info {
+    flex: 1;
+    max-width: 50%;  
+    text-align: left;
+}
+
+.standard-info h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.standard-info p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.standard-info .minimal-btn {
+    font-size: 14px;
+    padding: 8px 18px;
+    border: 1px solid #000;
+    color: #333;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.standard-info .minimal-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.standard-info .minimal-btn:focus {
+    outline: none;
+}
+
+.standard-img-left, .standard-img-right {
+    width: 45%;  
+    height: auto;
+    object-fit: cover;  
+    border-radius: 5px;
+}
+
+.standard-item.reverse-order {
+    flex-direction: row-reverse;  
+}
+
+/* Responsividade - MOBILE */
+@media (max-width: 768px) {
+    .standard-item {
+        flex-direction: column;  
+        gap: 20px;  
+    }
+
+    /* Ordenação para dispositivos móveis */
+    .standard-info {
+        order: 1;  
+        max-width: 100%;  
+        text-align: center;  
+    }
+
+    .standard-info h4 {
+        font-size: 18px;  
+    }
+
+    .standard-info p {
+        font-size: 14px; 
+    }
+
+    .standard-info .minimal-btn {
+        font-size: 14px;
+        padding: 8px 18px; 
+    }
+
+    .standard-img-left, .standard-img-right {
+        order: 2;  
+        width: 100%;  
+        height: auto;  
+    }
+}
+
+
+
+/* -------------------------------- GALERIA -------------------------------- */
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 0; 
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+

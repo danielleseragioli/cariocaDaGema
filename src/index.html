@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carioca da Gema</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Música de fundo -->
+    <audio autoplay loop hidden>
+        <source src="música.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Menu  -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-nav"> 
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav"> 
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rioDeJaneiro.html">RIO DE JANEIRO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hospedagem.html">HOSPEDAGEM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="restaurantes.html">RESTAURANTES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="atividades.html">ATIVIDADES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eventos.html">EVENTOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">GALERIA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ofertas.html">OFERTAS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="images/logo_url.jpg" alt="Logo Carioca da Gema">
+    </div>
+
+    <!-- Explore o Rio de Janeiro -->
+    <section class="explore-section">
+        <div class="container explore-content">
+            <div class="explore-images">
+                <img src="images/image_praia.jpg" alt="Ciclismo na praia" class="image-praia">
+                <img src="images/image_chapeu.jpg" alt="Montanha no Rio de Janeiro" class="image-chapeu">
+            </div>
+            <div class="explore-text">
+                <p>"Carioca da gema" é uma expressão popular no Brasil usada para se referir a uma pessoa que nasceu e foi criada na cidade do Rio de Janeiro, especialmente aquela que tem uma conexão profunda com a cultura, os costumes e o estilo de vida carioca. A palavra "gema" faz alusão à parte central do ovo, que é a mais pura e valiosa, simbolizando a "essência" de ser carioca.</p>
+                <p>Portanto, ser "carioca da gema" vai além de apenas nascer no Rio de Janeiro — é alguém que incorpora o espírito e o jeito de ser do carioca de forma autêntica, vivendo intensamente a cultura local, com seus hábitos, sotaque, e amor pela cidade.</p>
+                <p>Aqui no <strong>Carioca da Gema</strong>, queremos que você viva o Rio de Janeiro de forma autêntica, explorando cada canto da cidade como um verdadeiro carioca. Do imponente Cristo Redentor até o agito das praias de Ipanema, vamos te guiar pelas melhores experiências que a cidade tem a oferecer.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Seção de Ofertas Recentes -->
+    <section class="offers-section">
+        <div class="container">
+            <p class="section-subtitle">DESCUBRA AS NOSSAS</p> <!-- Subtítulo pequeno acima -->
+            <h2 class="section-title">OFERTAS MAIS RECENTES</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="eventos.html">
+                        <img src="images/image_fogos.jpg" alt="Réveillon em Copacabana" class="hotel-img">
+                        <p class="offer-caption">RÉVEILLON EM COPACABANA</p> 
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="eventos.html">
+                        <img src="images/image_carnaval.jpg" alt="Carnaval do Rio de Janeiro" class="hotel-img">
+                        <p class="offer-caption">CARNAVAL DO RIO DE JANEIRO</p> 
+                    </a>
+                </div>
+            </div>
+            <a href="eventos.html">
+                <button class="offer-button">TODAS AS OFERTAS</button> 
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção 4 divisorias-->
+    <section class="explore-rio">
+    <a href="rioDeJaneiro.html" class="explore-link"> 
+        <div class="explore-item">
+            <img src="images/image_historiaDoRio.jpg" alt="História do Rio">
+            <div class="explore-item-text">
+                <h3>HISTÓRIA<br> DO RIO</h3>
+                <p>CONHEÇA A CULTURA</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="restaurantes.html" class="explore-link"> 
+        <div class="explore-item">
+            <img src="images/image_saboresDoRio.jpg" alt="Sabores do Rio">
+            <div class="explore-item-text">
+                <h3>SABORES<br> DO RIO</h3>
+                <p>CONHEÇA OS RESTAURANTES</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="eventos.html" class="explore-link"> <!-- Link clicável -->
+        <div class="explore-item">
+            <img src="images/image_eventos.jpg" alt="Eventos Inesquecíveis">
+            <div class="explore-item-text">
+                <h3>EVENTOS<br> INESQUECÍVEIS</h3>
+                <p>CONSULTE OS EVENTOS</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="atividades.html" class="explore-link"> <!-- Link clicável -->
+        <div class="explore-item">
+            <img src="images/image_maravilhasCariocas.jpg" alt="Maravilhas Cariocas">
+            <div class="explore-item-text">
+                <h3>MARAVILHAS<br> CARIOCAS</h3>
+                <p>CONSULTE AS ATIVIDADES</p>
+            </div>
+        </div>
+    </a>
+    </section>
+
+
+    <!-- Seção de Sugestões de Hospedagem -->
+    <section class="lodging-section">
+        <div class="container">
+            <p class="section-subtitle">CONSULTE AS NOSSAS</p> <!-- Subtítulo pequeno acima -->
+            <h2 class="section-title">SUGESTÕES DE HOSPEDAGEM</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="hospedagem.html">
+                        <img src="images/image_hotel_HOME1.jpg" alt="Copacabana Palace" class="hotel-img">
+                        <p class="offer-caption">Copacabana Palace</p>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="hospedagem.html">
+                        <img src="images/image_hotel_HOME2.jpg" alt="Fairmont Rio de Janeiro Copacabana" class="hotel-img">
+                        <p class="offer-caption">Fairmont Rio de Janeiro Copacabana</p>
+                    </a>
+                </div>
+            </div>
+            <a href="hospedagem.html">
+             <button class="offer-button">TODAS AS SUGESTÕES</button>      
+            </a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Seção de Contato -->
+                <div class="col-md-6 contact-info">
+                    <h5>ENTRE EM CONTACTO CONNOSCO</h5>
+                    <p><strong>E-mail:</strong> contacto@cariocadagema.pt</p>
+                    <p><strong>Endereço:</strong> Av. Dom Carlos I 4</p>
+                    <p><strong>Telefone:</strong> (+351) 210 520 024 </p>
+                </div>
+
+                <!-- Seção de Newsletter -->
+                <div class="col-md-6 subscribe-newsletter">
+                    <h5>SUBSCREVA A NOSSA NEWSLETTER</h5>
+                    <form>
+                        <input type="text" name="name" placeholder="Nome" class="form-control">
+                        <input type="email" name="email" placeholder="E-mail" class="form-control mt-2">
+                        <button type="submit" class="btn btn-outline-dark mt-2">Subscrever</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // JavaScript para adicionar a sombra ao rolar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            
+            // Se o scroll for maior que 50px, adiciona a classe 'scrolled'
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>
